@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        player = GameObject.Find("Player").transform;
     }
 
     public void TakeDamage(int damage)
