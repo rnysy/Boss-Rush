@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public Transform player;
     public bool isFlipped = false;
     public Transform EnemyAttackPoint;
+    public bool isInvulnerable = false;
 
     public int attackDamage = 20;
     public int enragedAttackDamage = 40;
@@ -54,6 +55,9 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isInvulnerable)
+            return;
+
         currentHealth -= damage;
         StartCoroutine(DamageAnimation());
 
