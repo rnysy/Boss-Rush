@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7252431541053686351}
   - component: {fileID: 7252431541053686349}
   - component: {fileID: 7252431541053686350}
+  - component: {fileID: 4678624183399097868}
   - component: {fileID: 7252431541053686354}
   m_Layer: 8
   m_Name: Enemy
@@ -141,6 +142,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4678624183399097868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7252431541053686348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76157d639351bf740a83cc085cef4920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bosshealth: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!114 &7252431541053686354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,4 +169,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   anim: {fileID: 7252431541053686349}
+  Hostile: {fileID: 0}
+  player: {fileID: 0}
+  isFlipped: 0
+  EnemyAttackPoint: {fileID: 0}
+  isInvulnerable: 0
+  attackDamage: 20
+  enragedAttackDamage: 40
+  attackOffset: {x: 0, y: 0, z: 0}
+  attackRange: 1
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 0

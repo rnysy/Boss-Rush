@@ -22,7 +22,7 @@ public class Combat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 PlayerAttack();
-                nextAttackTime = Time.time + 0.3f / attackRate;
+                nextAttackTime = Time.time + 0.5f / attackRate;
             }
 
         }

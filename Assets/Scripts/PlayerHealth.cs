@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 	public int health = 300;
+	public int currentHealth;
 
 	public void TakeDamage(int damage)
 	{
 		
-		health -= damage;
+		currentHealth -= damage;
 
 		StartCoroutine(DamageAnimation());
 
@@ -19,6 +20,11 @@ public class PlayerHealth : MonoBehaviour
 			Debug.Log("죽었습니다.");
 			Die();
 		}
+	}
+
+	private void Start()
+	{
+		currentHealth = health;
 	}
 
 	void Die()

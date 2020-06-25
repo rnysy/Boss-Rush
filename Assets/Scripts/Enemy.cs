@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int maxHealth = 1000;
-    int currentHealth;
+    public int currentHealth;
     public Animator anim;
     public GameObject Hostile;
     public Transform player;
