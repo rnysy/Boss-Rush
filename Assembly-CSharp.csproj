@@ -66,6 +66,7 @@
     <Compile Include="Assets\Enemy_Enraged.cs" />
     <Compile Include="Assets\Free Pixel Art Forest\Demo\MoveBackground.cs" />
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
+    <Compile Include="Assets\Scripts\ChangeGameScene.cs" />
     <Compile Include="Assets\Scripts\Combat.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy_Run.cs" />
