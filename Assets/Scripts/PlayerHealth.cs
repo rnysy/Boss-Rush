@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
 		StartCoroutine(DamageAnimation());
 
-		if (health <= 0)
+		if (currentHealth <= 0)
 		{
 			Debug.Log("죽었습니다.");
 			Die();

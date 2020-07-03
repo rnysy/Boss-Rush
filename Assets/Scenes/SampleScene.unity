@@ -216,7 +216,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 715058146}
-  - component: {fileID: 715058148}
   - component: {fileID: 715058147}
   m_Layer: 9
   m_Name: PlayerHealthBar
@@ -295,20 +294,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &715058148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715058145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c561caece5c2794baf705def4c9746a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1945460803}
-  slider: {fileID: 715058147}
 --- !u!1 &786697708
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,8 +4338,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2178277840473826794, guid: fe621e18eae28ea46aace9c97fa65723, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe621e18eae28ea46aace9c97fa65723, type: 3}
 --- !u!1001 &8657912900972142415
 PrefabInstance:
