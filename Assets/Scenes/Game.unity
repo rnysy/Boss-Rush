@@ -195,6 +195,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187138447}
   m_CullTransparentMesh: 0
+--- !u!4 &204750751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 803562109, guid: 6357b00a9becf014a969e492d03a1966,
+    type: 3}
+  m_PrefabInstance: {fileID: 9101758540909338102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &690970469 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9101758539022830180, guid: 6357b00a9becf014a969e492d03a1966,
@@ -4388,6 +4394,11 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1945460803}
+    - target: {fileID: 4778134931650637647, guid: fe621e18eae28ea46aace9c97fa65723,
+        type: 3}
+      propertyPath: attackRange
+      value: 0.65
+      objectReference: {fileID: 0}
     - target: {fileID: 4778134931650637680, guid: fe621e18eae28ea46aace9c97fa65723,
         type: 3}
       propertyPath: m_Color.r
@@ -4462,6 +4473,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778134932045318502, guid: fe621e18eae28ea46aace9c97fa65723,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778134932045318502, guid: fe621e18eae28ea46aace9c97fa65723,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.244
       objectReference: {fileID: 0}
     - target: {fileID: 4778134932194360814, guid: fe621e18eae28ea46aace9c97fa65723,
         type: 3}
@@ -4628,6 +4649,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 803562109, guid: 6357b00a9becf014a969e492d03a1966, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 803562109, guid: 6357b00a9becf014a969e492d03a1966, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.017
+      objectReference: {fileID: 0}
     - target: {fileID: 6487416351655964218, guid: 6357b00a9becf014a969e492d03a1966,
         type: 3}
       propertyPath: slider
@@ -4656,13 +4685,18 @@ PrefabInstance:
     - target: {fileID: 9101758539022830180, guid: 6357b00a9becf014a969e492d03a1966,
         type: 3}
       propertyPath: attackRange
-      value: 1.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 9101758539022830180, guid: 6357b00a9becf014a969e492d03a1966,
         type: 3}
       propertyPath: enragedAttackDamage
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 9101758539022830180, guid: 6357b00a9becf014a969e492d03a1966,
+        type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 204750751}
     - target: {fileID: 9101758539022830182, guid: 6357b00a9becf014a969e492d03a1966,
         type: 3}
       propertyPath: m_SortingLayerID
