@@ -10,7 +10,7 @@ public class Scene_Manager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             Debug.Log("if문");
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }
