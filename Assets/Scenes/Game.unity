@@ -207,12 +207,39 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 9101758540909338102}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 692565513}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 139783d4aa80c254d84b70c26d97775d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &692565513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9101758539022830202, guid: 6357b00a9becf014a969e492d03a1966,
+    type: 3}
+  m_PrefabInstance: {fileID: 9101758540909338102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &692565520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692565513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2251b651ddeed2489815f26b026e905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailSize: 15
+  spacing: 2
+  color: {r: 1, g: 0.0990566, b: 0.0990566, a: 0.69411767}
+  ghostMaterial: []
+  ghostSpriteSortingOrder: -1
+  renderOnMotion: 0
+  colorAlphaOverride: 0
+  alphaFluctuationOverride: 0
+  alphaFluctuationDivisor: 0
 --- !u!1 &715058145
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +390,7 @@ Material:
     - _Contrast: 1
     - _Fade: 0.63
     - _Shear: 1
-    - _Size: 12.7
+    - _Size: 5.9
     - _Skew: 0.5
     - _Speed: 0.5
     m_Colors:
@@ -4095,7 +4122,7 @@ MonoBehaviour:
   color1: {r: 1, g: 1, b: 1, a: 1}
   color2: {r: 0.6745283, g: 0.82386243, b: 1, a: 0}
   speed: 0.5
-  size: 12.7
+  size: 5.9
   skew: 0.5
   shear: 1
   fade: 0.63
@@ -4397,7 +4424,7 @@ PrefabInstance:
     - target: {fileID: 4778134931650637647, guid: fe621e18eae28ea46aace9c97fa65723,
         type: 3}
       propertyPath: attackRange
-      value: 0.65
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4778134931650637680, guid: fe621e18eae28ea46aace9c97fa65723,
         type: 3}

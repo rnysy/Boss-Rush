@@ -64,9 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Assets\Free Pixel Art Forest\Demo\MoveBackground.cs" />
-    <Compile Include="Assets\LightRays2D\Script\LightRays2D.cs" />
-    <Compile Include="Assets\LightRays2D\Script\LightRays2DAbstract.cs" />
-    <Compile Include="Assets\LightRays2D\Script\LightRays2DCanvas.cs" />
+    <Compile Include="Assets\Assets\LightRays2D\Script\LightRays2D.cs" />
+    <Compile Include="Assets\Assets\LightRays2D\Script\LightRays2DAbstract.cs" />
+    <Compile Include="Assets\Assets\LightRays2D\Script\LightRays2DCanvas.cs" />
+    <Compile Include="Assets\GhostSprites2D\Scripts\CameraController.cs" />
+    <Compile Include="Assets\GhostSprites2D\Scripts\GhostSprites\GhostSprites.cs" />
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\Combat.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -86,11 +88,12 @@
     <None Include="Assets\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\LightRays2D\Readme.txt" />
+    <None Include="Assets\Assets\LightRays2D\Readme.txt" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\LightRays2D\Shaders\LightRays.shader" />
+    <None Include="Assets\Assets\LightRays2D\Shaders\LightRays.shader" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\GhostSprites2D\README.txt" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Assets\Free Pixel Art Forest\Lisense.txt" />
