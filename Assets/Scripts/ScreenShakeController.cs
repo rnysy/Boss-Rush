@@ -25,7 +25,6 @@ public class ScreenShakeController : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 originalPos = transform.localPosition;
         if (shakeTimeRemaining > 0)
         {
 
@@ -40,9 +39,6 @@ public class ScreenShakeController : MonoBehaviour
 
             shakeRotation = Mathf.MoveTowards(shakeRotation, 0f, shakeFadeTime * rotationMultiplier * Time.deltaTime);
         }
-        transform.localPosition = originalPos;
-
-
 
     }
 
