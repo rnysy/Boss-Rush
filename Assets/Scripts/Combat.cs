@@ -13,7 +13,6 @@ public class Combat : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -37,6 +36,7 @@ public class Combat : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
+            ScreenShakeController.instance.StartShake(.2f, .1f);
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
     }

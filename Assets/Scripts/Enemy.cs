@@ -21,7 +21,6 @@ public class Enemy : MonoBehaviour
     public LayerMask attackMask;
     public Transform attackPoint;
 
-
     public void EnemyAttack()
     {
         Vector3 pos = transform.position;
@@ -52,6 +51,7 @@ public class Enemy : MonoBehaviour
     {
         currentHealth = maxHealth;
         player = GameObject.Find("Player").transform;
+        //gameObject.GetComponent<GhostSprites>().enabled = false;
     }
 
     public void TakeDamage(int damage)
@@ -65,6 +65,7 @@ public class Enemy : MonoBehaviour
         if(currentHealth <= 300)
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
+            //gameObject.GetComponent<GhostSprites>().enabled = true;
         }
 
         if (currentHealth <= 0)
