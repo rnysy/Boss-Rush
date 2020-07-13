@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1f304d7989d9b474797fd14631e68493
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hitEnemy: {fileID: 8300000, guid: 74233f91aa52d9945ac228f2194217f5, type: 3}
+  - hitPlayer: {fileID: 8300000, guid: 6876ebdcc11291b4e9005f914ff16306, type: 3}
+  - selectButton: {fileID: 8300000, guid: e043c960b5a9f9b43a82fa1e75e19bc9, type: 3}
+  - playerJump: {fileID: 8300000, guid: 2506e69f9b1e2c749ae478398b5eba7b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
