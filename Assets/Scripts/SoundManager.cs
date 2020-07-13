@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager soundManager;
 
-    AudioSource gameSound;
+    public AudioSource gameSound;
 
     public AudioClip hitEnemy;
     public AudioClip hitPlayer;
@@ -17,7 +16,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip enemyAttack;
     public AudioClip playerRun;
 
-    void Awake()
+    private void Awake()
     {
         if(soundManager == null)
         {
@@ -35,7 +34,7 @@ public class SoundManager : MonoBehaviour
         gameSound.PlayOneShot(hitEnemy);
     }
 
-    public void jumpSound()
+    public void playerJumpSound()
     {
         gameSound.PlayOneShot(playerJump);
     }
@@ -55,8 +54,13 @@ public class SoundManager : MonoBehaviour
         gameSound.PlayOneShot(enemyAttack);
     }
 
-    public void playerRundSound()
+    public void playerRunSound()
     {
         gameSound.PlayOneShot(playerRun);
+    }
+
+    private void Update()
+    {
+        
     }
 }

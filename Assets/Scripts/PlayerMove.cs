@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
         //플레이어 점프 처리
         if (Input.GetButtonDown("Jump") && !anim.GetBool("isJumping"))
         {
+            SoundManager.soundManager.playerJumpSound();
             anim.SetBool("isJumping", true);
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
         }

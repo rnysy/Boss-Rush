@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
 
     public void EnemyAttack()
     {
+        SoundManager.soundManager.enemyAttackSound();
         Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
@@ -30,12 +31,14 @@ public class Enemy : MonoBehaviour
         Collider2D colInfo = Physics2D.OverlapCircle(EnemyAttackPoint.position, attackRange, attackMask);
         if (colInfo != null)
         {
+            SoundManager.soundManager.playHitSound();
             colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         }
     }
 
     public void EnragedEnemyAttack()
     {
+        SoundManager.soundManager.enemyAttackSound();
         Vector3 pos = transform.position;
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
@@ -43,6 +46,7 @@ public class Enemy : MonoBehaviour
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
         if (colInfo != null)
         {
+            SoundManager.soundManager.playHitSound();
             colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
         }
     }

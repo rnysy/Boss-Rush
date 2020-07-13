@@ -30,12 +30,14 @@ public class Combat : MonoBehaviour
 
     public void PlayerAttack()
     {
+        SoundManager.soundManager.playerAttackSound();
         anim.SetTrigger("isAttacking");
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         foreach (Collider2D enemy in hitEnemies)
         {
+            SoundManager.soundManager.playEnemyHitSound();
             ScreenShakeController.instance.StartShake(.2f, .1f);
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
