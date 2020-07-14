@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public bool isInvulnerable = false;
 
     public int attackDamage = 20;
-    public int enragedAttackDamage = 40;
+    public int enragedAttackDamage = 30;
 
     public Vector3 attackOffset;
     public float attackRange = 1f;
@@ -43,6 +43,8 @@ public class Enemy : MonoBehaviour
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
 
+        //ShootSlashEffect.shootSlash.Shoot();
+
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
         if (colInfo != null)
         {
@@ -55,7 +57,7 @@ public class Enemy : MonoBehaviour
     {
         currentHealth = maxHealth;
         player = GameObject.Find("Player").transform;
-        //gameObject.GetComponent<GhostSprites>().enabled = false;
+        gameObject.GetComponent<GhostSprites>().enabled = false;
     }
 
     public void TakeDamage(int damage)
@@ -69,7 +71,7 @@ public class Enemy : MonoBehaviour
         if(currentHealth <= 300)
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
-            //gameObject.GetComponent<GhostSprites>().enabled = true;
+            gameObject.GetComponent<GhostSprites>().enabled = true;
         }
 
         if (currentHealth <= 0)
@@ -114,7 +116,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Rigidbody2D>().isKinematic = true;
         this.enabled = false;
-        Destroy(Hostile, 8);
+        Destroy(Hostile, 5);
     }
 
     public void LookAtPlayer()

@@ -15,6 +15,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip playerAttack;
     public AudioClip enemyAttack;
     public AudioClip playerRun;
+    public AudioClip gameOver;
 
     private void Awake()
     {
@@ -59,6 +60,10 @@ public class SoundManager : MonoBehaviour
         gameSound.PlayOneShot(playerRun);
     }
 
+    public void gameOverSnd()
+    {
+        gameSound.PlayOneShot(gameOver);
+    }
     private void Update()
     {
         

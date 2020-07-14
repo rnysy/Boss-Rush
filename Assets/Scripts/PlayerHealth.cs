@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-	public int health = 300;
+	public int health = 500;
 	public int currentHealth;
 
 	public void TakeDamage(int damage)
@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
 	void Die()
 	{
 		Debug.Log("실행됨");
+		SoundManager.soundManager.gameOverSnd();
 		SceneManager.LoadScene("GameOver");
 	}
 

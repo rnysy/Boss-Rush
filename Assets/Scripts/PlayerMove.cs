@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();    //rigid 변수 초기화
         maxSpeed = 4f;              //최대속도
-        jumpPower = 6;             //점프 높이
+        jumpPower = 7;             //점프 높이
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();      
     }
