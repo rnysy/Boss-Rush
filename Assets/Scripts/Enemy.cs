@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
         if (colInfo != null)
         {
             SoundManager.soundManager.playHitSound();
+            ScreenShakeController.instance.StartShake(.2f, .1f);
             colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         }
     }
@@ -49,6 +50,7 @@ public class Enemy : MonoBehaviour
         if (colInfo != null)
         {
             SoundManager.soundManager.playHitSound();
+            ScreenShakeController.instance.StartShake(.2f, .1f);
             colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
         }
     }
@@ -71,7 +73,7 @@ public class Enemy : MonoBehaviour
         if(currentHealth <= 300)
         {
             GetComponent<Animator>().SetBool("isEnraged", true);
-            gameObject.GetComponent<GhostSprites>().enabled = true;
+            //gameObject.GetComponent<GhostSprites>().enabled = true;
         }
 
         if (currentHealth <= 0)
